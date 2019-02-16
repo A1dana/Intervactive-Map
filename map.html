@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_4dc0eec0cdf84944bf2d132529f1f60f {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_4dc0eec0cdf84944bf2d132529f1f60f" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_4dc0eec0cdf84944bf2d132529f1f60f = L.map(
+        'map_4dc0eec0cdf84944bf2d132529f1f60f', {
+        center: [42.544853, 77.700421],
+        zoom: 8.9,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_72901c4cfe1249bea956013f7a376130 = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_4dc0eec0cdf84944bf2d132529f1f60f);
+    
+        var marker_f133ac9db5f24448aa25bae1a06c5d18 = L.marker(
+            [42.64328, 77.02784],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc0eec0cdf84944bf2d132529f1f60f);
+        
+    
+
+                var icon_85242cb170284f3a80fd1549b2346dcb = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f133ac9db5f24448aa25bae1a06c5d18.setIcon(icon_85242cb170284f3a80fd1549b2346dcb);
+            
+    
+            var popup_162de3439f684edaa26c706140adff1c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_84ad1968ea864552a384832c1df1f601 = $(`<div id="html_84ad1968ea864552a384832c1df1f601" style="width: 100.0%; height: 100.0%;"><i>She spoke 4 languages! And not the way we usually expect us to speak them: semi-fluently. Naturally, I was curious to hear her speak all four since I was proficient in those 4 as well, perhaps my seemingly harmless request came out sounding arrogant. I didt mean to test her, our tour guide did not flinch as she looked at me and switched from Turkish to English to Kyrgyz and to Russian carefully pointing out differences in pronunciations and highlighting terms specific to a particular language. Her presence and demeanor were powerful, accompanied by her confidence she transposed a strong sense of influence. She was a bit snarky of course but that was my fault. This small interaction will forever be stamped in my mind. I hope one day when I am back I will meet her again and thank her for her inspiring self</i></div>`)[0];
+                popup_162de3439f684edaa26c706140adff1c.setContent(html_84ad1968ea864552a384832c1df1f601);
+            
+
+            marker_f133ac9db5f24448aa25bae1a06c5d18.bindPopup(popup_162de3439f684edaa26c706140adff1c)
+            ;
+
+            
+        
+    
+        var marker_9cff1c322bee4af18b2faa434e46e59c = L.marker(
+            [42.674371, 77.30135],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc0eec0cdf84944bf2d132529f1f60f);
+        
+    
+
+                var icon_367f9eaeffb84375a7475879b93d7919 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9cff1c322bee4af18b2faa434e46e59c.setIcon(icon_367f9eaeffb84375a7475879b93d7919);
+            
+    
+            var popup_4ebbe0544f02454ab11e79038cab3cb3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e0737c0f735e41edba54ef4d173e91cc = $(`<div id="html_e0737c0f735e41edba54ef4d173e91cc" style="width: 100.0%; height: 100.0%;"><i>The narrative of Baike (uncle) is particularly special to me.He explained details of his job, carefully showing techniques for reaping and baling the grass. By the 5th hour of our informal interview,  Baike allowed me to help with his (as I found out) hard job, Baike excited to tell me about his job, family, children and his life promised to bring me a smaller baler for the next day.</i></div>`)[0];
+                popup_4ebbe0544f02454ab11e79038cab3cb3.setContent(html_e0737c0f735e41edba54ef4d173e91cc);
+            
+
+            marker_9cff1c322bee4af18b2faa434e46e59c.bindPopup(popup_4ebbe0544f02454ab11e79038cab3cb3)
+            ;
+
+            
+        
+    
+        var marker_c69c33904d654836bb99de1256373e16 = L.marker(
+            [42.618828, 78.090761],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc0eec0cdf84944bf2d132529f1f60f);
+        
+    
+
+                var icon_6c1f3fbee7334cb6bc84a01bc3ca1d81 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'lightred',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c69c33904d654836bb99de1256373e16.setIcon(icon_6c1f3fbee7334cb6bc84a01bc3ca1d81);
+            
+    
+            var popup_f93aca68da8241d4aa34977b6db4e00d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6b9bcda48c724c50a063a24b0d446442 = $(`<div id="html_6b9bcda48c724c50a063a24b0d446442" style="width: 100.0%; height: 100.0%;"><b>City Life</b></div>`)[0];
+                popup_f93aca68da8241d4aa34977b6db4e00d.setContent(html_6b9bcda48c724c50a063a24b0d446442);
+            
+
+            marker_c69c33904d654836bb99de1256373e16.bindPopup(popup_f93aca68da8241d4aa34977b6db4e00d)
+            ;
+
+            
+        
+    
+        var marker_8e570e433b2544ea9043e1d6ca808baa = L.marker(
+            [42.48113, 78.395677],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc0eec0cdf84944bf2d132529f1f60f);
+        
+    
+
+                var icon_bba40ee02dfb4200bcf5512ebd6c2c07 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'lightblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8e570e433b2544ea9043e1d6ca808baa.setIcon(icon_bba40ee02dfb4200bcf5512ebd6c2c07);
+            
+    
+            var popup_98025b325a0d4e8c828318dc6643e4a2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f0e57cdf814e4cfca92f0fa0cd6ea258 = $(`<div id="html_f0e57cdf814e4cfca92f0fa0cd6ea258" style="width: 100.0%; height: 100.0%;"><i>She owned that field, she owned that ball, and she owned the game usually dominated by men. A girl in her track shoes, she joined in the football game being played by a group of 5 boys.  Jumping into the circle she with ease began to lead catching most difficult passes and kicking the further distances. Everyone seems to have collectively acknowledged her dominance, and she knew it as well. She was compelling, she made us all look. </i></div>`)[0];
+                popup_98025b325a0d4e8c828318dc6643e4a2.setContent(html_f0e57cdf814e4cfca92f0fa0cd6ea258);
+            
+
+            marker_8e570e433b2544ea9043e1d6ca808baa.bindPopup(popup_98025b325a0d4e8c828318dc6643e4a2)
+            ;
+
+            
+        
+    
+        var marker_aa66244cded64d728f2137ede8317595 = L.marker(
+            [42.668629, 77.568189],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4dc0eec0cdf84944bf2d132529f1f60f);
+        
+    
+
+                var icon_7545166b1052404fb1789f51613a3a50 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa66244cded64d728f2137ede8317595.setIcon(icon_7545166b1052404fb1789f51613a3a50);
+            
+    
+            var popup_b644077833c44aa1a315ad89217b011b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_da5f277952f24de6ab04c06824eb8b9c = $(`<div id="html_da5f277952f24de6ab04c06824eb8b9c" style="width: 100.0%; height: 100.0%;"><i>Avrora</i></div>`)[0];
+                popup_b644077833c44aa1a315ad89217b011b.setContent(html_da5f277952f24de6ab04c06824eb8b9c);
+            
+
+            marker_aa66244cded64d728f2137ede8317595.bindPopup(popup_b644077833c44aa1a315ad89217b011b)
+            ;
+
+            
+        
+</script>
